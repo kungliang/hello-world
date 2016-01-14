@@ -1,0 +1,14 @@
+input,textarea {
+	border:1px solid silver;
+	padding:3px;
+}
+.invalidField {
+	background-color:pink;
+	border:1px solid red;
+	color:blue;
+}
+.inEditField {
+	background-color:lightyellow;
+	border:1px solid orange;
+	color:blue;
+}

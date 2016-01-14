@@ -1,0 +1,6 @@
+#dialog-message, #dialog-confirm {
+	color:red;
+	text-align:center;
+	padding-top:20px;
+	display:none;
+}

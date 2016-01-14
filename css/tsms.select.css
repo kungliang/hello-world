@@ -1,0 +1,13 @@
+    select {
+        font-size:12px;
+        border:1px solid silver;
+        margin:0px;
+        color:blue;
+        background-color:wheat;
+        padding:2px;
+    }
+    select option {
+        background-color:lightyellow;
+        color:blue;
+        font-size:12px;
+    }

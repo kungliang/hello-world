@@ -1,0 +1,224 @@
+	/* HTML Basic */
+	body {
+		margin:40px;
+                padding:30px;
+                font-family: "Trebuchet MS", "Arial", "Helvetica", "Verdana", "sans-serif";
+	}
+	table {
+		border-collapse:collapse;
+		text-align:left;
+		border:2px solid silver;
+		/*margin:0px auto;*/
+                border:none;
+                margin-top:20px;
+                margin-bottom:20px;                
+	}
+	td,th {
+		text-align:left;
+		border:1px dotted silver;
+		padding:5px;
+	}
+	th {
+		text-align:center;
+		background-color:#e0e0e0;
+	}
+	a {
+		text-decoration:none;
+	}
+        a:hover{
+            color:orange;
+        }
+	img {
+		text-align:center;
+                margin:20px 30px;
+                border:1px solid lightblue;
+		
+	}
+        img:hover {
+            border:1px solid lightyellow;
+        }
+	pre {
+		font-family: "courier new","courier";
+		background-color:#d0d0d0;
+		width:400px;
+		margin-left:80px;
+		margin-right:auto;
+		padding:20px;
+
+	}
+	.St1CmdGroupName{
+		color:blue;
+	}
+	.St1ParamTable {
+		margin:10px;
+		margin-left:40px;
+		border:none;
+	}
+	.St1ParamTable td {
+		padding:10px;
+		border: none;
+	}
+	.St1ParaSeq {
+		width:50px;
+		font-weight:bold;
+	}
+	.St1ParaDatatype{
+	}
+	.St1ParaDesc{
+		vertical-align:top;
+	}
+	.St1CmdTable {
+		width:100%;
+		margin:20px;
+		margin-bottom:40px;
+		border:none;
+	}
+	.St1CmdTable td {
+		text-align:left;
+		/*border:none;*/
+	}
+	.St1CmdName {
+		text-align:left;
+		/*font-size:20px;*/
+		font-weight:bolder;
+		border-bottom:1px solid black;
+		padding:0px;
+	}
+	.St1CmdName H2,H3 {
+		margin:0px;
+	}
+	td.St1CmdDesc{
+		width:10%;
+		vertical-align:top;
+	}
+	.St1CmdDescContent{
+		width:90%;
+		text-align:left;
+	}
+
+	.St1DocChapter {
+		/*-- Open for edit mode --*/
+		/*border:2px dotted black;*/
+		margin:10px;
+		padding:5px;
+                border-top:1px dotted silver;
+	}
+        .St1DocChapter:hover{
+        }
+	.St1DocSection {
+		/*-- Open for edit mode --*/
+		/*border:2px dotted blue;*/
+		margin:20px;
+		padding:5px;
+	}
+	.St1DocParagraph {
+		/*-- Open for edit mode --*/
+		/*border:2px dotted yellow;*/
+		margin:20px;
+		padding:5px;
+	}	
+	.St1CatChapter {
+		/*-- Open for edit mode --*/
+		/*border:2px dotted black;*/
+		font-size:20px;
+		font-weight:bold;
+		margin:10px;
+		padding:5px;
+	}
+        .St1CatChapter:hover{
+            background-color:lightyellow;
+        }
+	.St1CatSection {
+		font-size:16px;
+		font-weight:normal;
+		margin:0px 30px 0px 30px;
+		padding:2px;
+                /*border:1px solid red;*/
+	}
+	.St1CatParagraph {
+		font-size:16px;
+		font-weight:normal;
+		margin:0px 50px 0px 30px;
+		padding:2px;
+	}	
+	#St1DocTitle {
+		font-size:30px;
+		font-weight:bold;
+	}
+	#St1DocHead {
+		/*-- open for edit mode --*/
+		/*border:1px solid orange;*/
+		margin:20px;
+	}
+	#St1DocBody {
+		/*--Open for edit mode --*/
+		/*border:1px solid green;*/
+		margin:20px;		
+	}
+	#St1DocFoot {
+		/*--Open for edit mode --*/
+		/*border:1px solid maroon;*/
+		margin:20px;		
+	}	
+	#St1DocCopyRight, #St1DocDate,#St1DocVersion {
+		font-size:14px;
+		text-align:right;
+		font-style:italic;
+	}
+	.St1LinkBackToTop {
+		/*--Open for edit mode --*/
+		/* border:1px dashed lime;*/
+		font-size:12px;
+		text-align:right;
+		margin:0px 20px 0px 20px;
+		font-style:italic;
+		font-weight:bold;
+	}
+        .St1LinkBackToTop:hover{
+            text-decoration: underline;
+        }
+	.St1DocImage {
+		display:block;
+		margin:0px auto;
+		border:1px solid navy;
+	}
+	.St1DocIcon {
+		display:inline;
+		width:24px;
+		height:24px;
+		border:2px solid lightblue;
+	}
+	.St1DocKeyword {
+		color:brown;
+		border-bottom:1px dotted brown;
+		font-weight:bold;
+	}
+	.St1DocWarning, .St1DocHint {
+		text-align:left;
+		margin-left:100px;
+		margin-right:100px;
+		margin-top:20px;
+		margin-bottom:20px;
+		padding:15px;
+		background-color:khaki;
+		border:2px solid gold;
+	}
+	.St1DocHint {
+		background-color:greenyellow;
+	}
+	.St1DocWarning img, .St1DocHint img {
+		width:48px;
+		height:48px;
+	}
+	.St1DocWarning div, .St1DocHint div {
+		margin-top:5px;
+		margin-bottom:5px;		
+	}
+	.St1DocWarning  table, .St1DocHint table {
+		margin:0px;
+		border:none;
+	}
+	.St1DocWarning table  td,.St1DocHint table  td  {
+		border:none;
+		vertical-align:middle;
+	}
