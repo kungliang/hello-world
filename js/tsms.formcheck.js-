@@ -1,0 +1,110 @@
+/* tkms.formcheck.js 
+ *  APIs use to check form elements
+ */
+function checkRanges(arry, msg){
+    var errCount = 0;
+    var errMsg ="";
+    maxValue = arry.size();
+    for(var i=0;i<arry.size();i++){
+        try{
+            checkRange(arry[i],maxValue,msg);
+        }catch(e){
+            errCount++;
+            errMsg+="No."+(i+1)+":"+e.message+"\n";
+        }
+     }
+     return errMsg;
+}        
+function checkRange(field, maxValue, msg){
+    if($(field).val()>maxValue || $(field).val()<1){
+        $(field).addClass("invalidField");
+        throw new Error(msg);
+    }else{
+        $(field).removeClass("invalidField");
+    }
+
+}
+function checkAreUnique(arry,msg){
+    var errCount = 0;
+    var errMsg ="";
+    var container = new Array();
+    for(var i=0;i<arry.size();i++){
+        try{
+        //checkIsEmpty($(arry[i]),msg);
+          container[$(arry[i]).val()]+=1;
+        }catch(e){
+            errCount++;
+            errMsg+="No."+(i+1)+":"+e.message+"\n";
+        }
+     }
+     for(var i=0;i<container.size();i++){
+        try{
+          if(container[i]!=1){
+              throw new Error(msg);
+          }
+        }catch(e){
+            errCount++;
+            errMsg+="No."+(i+1)+":"+e.message+"\n";
+        }
+     }
+     return errMsg;
+}
+
+function checkAreFormat(arry,msg,reg){
+    var errCount = 0;
+    var errMsg ="";
+    for(var i=0;i<arry.size();i++){
+        try{
+        checkIsFormat($(arry[i]),msg, reg);
+        }catch(e){
+            errCount++;
+            errMsg+="No."+(i+1)+":"+e.message+"\n";
+        }
+     }
+     return errMsg;
+}
+
+function checkAreEmpty(arry,msg){
+    var errCount = 0;
+    var errMsg ="";
+    for(var i=0;i<arry.size();i++){
+        try{
+            checkIsEmpty($(arry[i]),msg);
+        }catch(e){
+            errCount++;
+            errMsg+="No."+(i+1)+":"+e.message+"\n";
+        }
+     }
+     return errMsg;
+}
+
+function checkIsEmpty(field, msg){
+    if(!$(field).val()){
+        $(field).addClass("invalidField");
+        throw new Error(msg);
+    }else{
+        $(field).removeClass("invalidField");
+    }
+
+}
+
+
+
+
+function checkIsFormat(field, msg, reg){
+    if(!reg.test($(field).val())){
+        $(field).addClass("invalidField");
+        throw new Error(msg);
+    }else{
+        $(field).removeClass("invalidField");
+    }
+}
+
+function setInEditClass(field){
+    $(field).focus(function(){
+        $(this).addClass("inEditField");
+    }).blur(function(){
+        $(this).removeClass("inEditField");
+    });
+}
+
